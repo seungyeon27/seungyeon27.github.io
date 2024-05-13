@@ -18,6 +18,10 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/6166fad830.js"
       crossorigin="anonymous"
@@ -46,10 +50,22 @@
     <main>
       <!-- Home -->
       <section id="home">
-        <p>2024 Portfolio</p>
-        <img src="images/home_profile.png" alt="Seungyeon's home profile" />
-        <h2>Kang seungyeon</h2>
-        <p>Web Publisher</p>
+        <div class="home__container">
+          <img
+            class="home__profile"
+            src="images/home_profile.png"
+            alt="Seungyeon's home profile"
+          />
+          <h2 class="home__name">KANGSEUNGYEON</h2>
+          <p class="home__titleleft">2024 Portfolio</p>
+          <p class="home__titleright">Web Publisher</p>
+          <a href="javascript:;" class="home__scroll-down">
+            <div class="home__scroll">
+              <span class="home__scroll-dot"></span>
+            </div>
+            <div class="home__arrow-down"></div>
+          </a>
+        </div>
       </section>
       <!-- About -->
       <section id="about">
