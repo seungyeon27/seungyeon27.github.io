@@ -100,7 +100,7 @@ button:focus {
 
 /* Common */
 .section {
-  padding: 4rem;
+  padding: 9rem 4rem;
   text-align: center;
 }
 
@@ -111,12 +111,14 @@ button:focus {
 
 .title {
   margin: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
+  line-height: 38px;
 }
 
 .description {
   margin: 0.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 33px;
 }
 
 /* Home */
@@ -232,6 +234,47 @@ button:focus {
 }
 
 /* About */
+#about {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.about__profile {
+  clear: both;
+  width: 400px;
+  height: 470px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: 0px -42px;
+}
+
+.about__deco {
+  position: absolute;
+  left: -1%;
+  top: 4%;
+  width: 22%;
+  object-fit: cover;
+  animation: rotate_image 30s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about__text {
+  width: 50%;
+  margin: 0.5rem 1.5rem;
+  text-align: left;
+}
+
+.about__text:nth-child(n + 1) {
+  line-height: 30px;
+  word-break: keep-all;
+}
 
 /* Skills */
 
