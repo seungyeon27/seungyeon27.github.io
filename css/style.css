@@ -100,7 +100,7 @@ button:focus {
 
 /* Common */
 .section {
-  padding: 9rem 4rem;
+  padding: 7rem 4rem;
   text-align: center;
 }
 
@@ -111,14 +111,9 @@ button:focus {
 
 .title {
   margin: 1rem 0;
-  font-size: 1.7rem;
-  line-height: 38px;
-}
-
-.description {
-  margin: 0.5rem 0;
-  font-size: 1.3rem;
-  line-height: 33px;
+  font-family: var(--text-nanum);
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
 /* Home */
@@ -237,6 +232,7 @@ button:focus {
 #about {
   display: flex;
   position: relative;
+  padding: 11rem 4rem 7rem 4rem;
   justify-content: space-evenly;
 }
 
@@ -252,9 +248,9 @@ button:focus {
 
 .about__deco {
   position: absolute;
-  left: -1%;
-  top: 4%;
-  width: 22%;
+  left: 0%;
+  top: 6%;
+  width: 21%;
   object-fit: cover;
   animation: rotate_image 30s linear infinite;
   transform-origin: 50% 50%;
@@ -265,10 +261,21 @@ button:focus {
   }
 }
 
+.about__title {
+  margin: 1rem 0 1.5rem 0;
+  font-size: 1.7rem;
+  line-height: 38px;
+}
+
 .about__text {
   width: 50%;
   margin: 0.5rem 1.5rem;
   text-align: left;
+}
+
+.about__description {
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
 }
 
 .about__text:nth-child(n + 1) {
@@ -277,6 +284,45 @@ button:focus {
 }
 
 /* Skills */
+#skills {
+  background-color: var(--color-primary);
+}
+
+.skills__content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills__description {
+  position: relative;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.skills__description::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -22px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: var(--color-accent-varient);
+}
+
+.skills__icons {
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.skills__icon {
+  padding-right: 0.7rem;
+}
+
+.skills__icon__img {
+  width: 3rem;
+}
 
 /* Project */
 
