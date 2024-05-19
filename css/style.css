@@ -488,4 +488,65 @@ button:focus {
   background-color: var(--color-accent);
 }
 
+/* Arrow up */
+.arrow-up {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--color-accent-varient);
+  color: var(--color-primary-variant);
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 5px 5px 0px 0px var(--color-darkgrey);
+  transition: opacity 300ms ease-in;
+}
+
 /* Contact */
+#contact {
+  position: relative;
+  background-color: var(--color-darkgrey);
+  color: white;
+}
+
+.contact_02_text {
+  margin: 0.5rem 0;
+}
+
+.contact__section {
+  padding: 2rem;
+  text-align: center;
+}
+
+#contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 1.3px);
+  height: 61px;
+  overflow: hidden;
+  line-height: 0;
+  background-color: var(--color-white);
+  mask: var(--divider-arrow);
+  -webkit-mask: var(--divider-arrow);
+}
+
+.contact_links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+.contact_link {
+  color: white;
+  transition: color 250ms ease-in;
+}
+
+.contact_link:hover {
+  color: var(--color-accent);
+}
