@@ -190,7 +190,7 @@ button:focus {
 
 .home__titleleft {
   float: left;
-  margin-top: -20%;
+  margin-top: -250px;
   color: var(--color-accent-varient);
   font-family: var(--text-nanum);
   font-size: 1.5rem;
@@ -215,7 +215,7 @@ button:focus {
 
 .home__titleright {
   float: right;
-  margin-top: -20%;
+  margin-top: -250px;
   color: var(--color-accent-varient);
   font-family: var(--text-nanum);
   font-size: 1.5rem;
@@ -358,6 +358,7 @@ button:focus {
 
 .skill__description {
   position: relative;
+  margin-left: 1rem;
   padding: 1rem 0;
   font-size: 1.3rem;
   text-align: left;
@@ -376,6 +377,7 @@ button:focus {
 
 .skill__icons {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 0.5rem;
 }
 
@@ -401,6 +403,7 @@ button:focus {
   border: 1px solid var(--color-accent);
   border-radius: 4px;
   font-size: 1.1rem;
+  white-space: nowrap;
 }
 
 .project__nav:hover {
@@ -500,13 +503,13 @@ button:focus {
   color: var(--color-primary-variant);
   border-radius: 100%;
   text-align: center;
-  box-shadow: 5px 5px 0px 0px var(--color-darkgrey);
+  box-shadow: 0px 0px 5px rgba(221, 221, 221, 1),
+    0 4px 20px rgba(204, 204, 204, 1);
   transition: opacity 300ms ease-in;
 }
 
 /* Contact */
 #contact {
-  position: relative;
   background-color: var(--color-darkgrey);
   color: white;
 }
@@ -518,20 +521,6 @@ button:focus {
 .contact__section {
   padding: 2rem;
   text-align: center;
-}
-
-#contact::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% + 1.3px);
-  height: 61px;
-  overflow: hidden;
-  line-height: 0;
-  background-color: var(--color-white);
-  mask: var(--divider-arrow);
-  -webkit-mask: var(--divider-arrow);
 }
 
 .contact_links {
@@ -549,4 +538,114 @@ button:focus {
 
 .contact_link:hover {
   color: var(--color-accent);
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 6rem 2rem 7rem 2rem;
+  }
+
+  .about__profile {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
+
+  .about {
+    margin: 0;
+    width: 100%;
+  }
+
+  .about__description {
+    padding: 0.7rem 0;
+    font-size: 1.2rem;
+    line-height: 28px;
+  }
+
+  .about__deco {
+    display: none;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .skill__description {
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 28px;
+  }
+
+  .skill__description::before {
+    left: -5px;
+    top: 27px;
+  }
+
+  .project__navlist {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #sangol,
+  #krispydonut,
+  #blackpink,
+  #healing {
+    flex-direction: column;
+  }
+
+  .project__img {
+    width: 100%;
+  }
+
+  .project__description {
+    margin: 0;
+    text-align: center;
+  }
+
+  .project__title {
+    font-size: 2rem;
+  }
+
+  .project__description::before {
+    display: none;
+  }
+
+  .designs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arrow-up {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
 }
