@@ -233,148 +233,145 @@
       <!-- Project -->
       <section id="project" class="section">
         <h2 class="title">Project</h2>
-        <ul class="project__navlist">
-          <li>
-            <a class="project__nav active" href="#sangol">산골초가펜션</a>
-          </li>
-          <li>
-            <a class="project__nav" href="#kripydonut">크리스피크림도넛</a>
-          </li>
-          <li><a class="project__nav" href="#blackpink">블랙핑크</a></li>
-          <li><a class="project__nav" href="#healing">힐링횡성</a></li>
-        </ul>
-        <div class="project">
-          <section id="sangol">
-            <img
-              class="project__img"
-              src="images/sangol_mu.png"
-              alt="산골초가펜션 목업 이미지"
-            />
-            <div class="project__description">
-              <h3 class="project__title">
-                <span class="project__subtitle">
-                  01 리디자인 반응형 웹사이트 </span
-                ><br />산골초가펜션
-              </h3>
-              <p class="project__text">
-                <span class="project__accenttext">작업시간</span>3주 소요
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">디자인 리뉴얼</span>Ai, Ps, Xd
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">프로그램</span>HTML5, CSS3,
-                jQuery
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">참여도</span>개인 작업 100%
-              </p>
-              <a
-                class="project__button"
-                href="https://tmddus00227.github.io/sangolchoga/"
-                title="리뉴얼사이트"
-              >
-                Renewal Site
-              </a>
-            </div>
-          </section>
-          <section id="krispydonut">
-            <img
-              class="project__img"
-              src="images/krispy_mu.png"
-              alt="크리스피크림도넛 목업 이미지"
-            />
-            <div class="project__description">
-              <h3 class="project__title">
-                <span class="project__subtitle">02 리디자인 PC 홈페이지 </span
-                ><br />크리스피크림도넛
-              </h3>
-              <p class="project__text">
-                <span class="project__accenttext">작업시간</span>3주 소요
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">디자인 리뉴얼</span>Ai, Ps, Xd
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">프로그램</span>HTML5, CSS3,
-                jQuery
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">참여도</span>개인 작업 100%
-              </p>
-              <a
-                class="project__button"
-                href="https://tmddus00227.github.io/krispy/"
-                title="리뉴얼사이트"
-                >Renewal Site
-              </a>
-            </div>
-          </section>
-          <section id="blackpink">
-            <img
-              class="project__img"
-              src="images/black_mu.png"
-              alt="블랙핑크 웹사이트 목업 이미지"
-            />
-            <div class="project__description">
-              <h3 class="project__title">
-                <span class="project__subtitle">
-                  03 리디자인 원페이지 PC 홈페이지 </span
-                ><br />블랙핑크
-              </h3>
-              <p class="project__text">
-                <span class="project__accenttext">작업시간</span>10일 소요
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">디자인 리뉴얼</span>Ai, Ps, Xd
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">프로그램</span>HTML5, CSS3,
-                jQuery
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">참여도</span>개인 작업 100%
-              </p>
-              <a
-                class="project__button"
-                href="https://tmddus00227.github.io/blackpink/"
-                title="리뉴얼사이트"
-                >Renewal Site
-              </a>
-            </div>
-          </section>
-          <section id="healing">
-            <img
-              class="project__img"
-              src="images/healing_mu.png"
-              alt="힐링횡성 목업 이미지"
-            />
-            <div class="project__description">
-              <h3 class="project__title">
-                <span class="project__subtitle">04 디자인 모바일 홈페이지</span
-                ><br />힐링횡성
-              </h3>
-              <p class="project__text">
-                <span class="project__accenttext">작업시간</span>2주 소요
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">디자인 리뉴얼</span>Ai, Ps, Xd
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">프로그램</span>HTML5, CSS3,
-                jQuery
-              </p>
-              <p class="project__text">
-                <span class="project__accenttext">참여도</span>개인 작업 100%
-              </p>
-              <a
-                class="project__button"
-                href="https://tmddus00227.github.io/healing/"
-                title="디자인사이트"
-                >Design Site
-              </a>
-            </div>
-          </section>
+        <input id="blackpink" type="radio" name="tab_item" checked />
+        <label class="tab_item" for="blackpink">블랙핑크</label>
+        <input id="krispydonut" type="radio" name="tab_item" />
+        <label class="tab_item" for="krispydonut">크리스피크림도넛</label>
+        <input id="sangol" type="radio" name="tab_item" />
+        <label class="tab_item" for="sangol">산골초가펜션</label>
+        <input id="healing" type="radio" name="tab_item" />
+        <label class="tab_item" for="healing">힐링횡성</label>
+
+        <div class="tab_content" id="blackpink_content">
+          <img
+            class="project__img"
+            src="images/black_mu.png"
+            alt="블랙핑크 웹사이트 목업 이미지"
+          />
+          <div class="project__description">
+            <h3 class="project__title">
+              <span class="project__subtitle">
+                01 리디자인 원페이지 PC 홈페이지 </span
+              ><br />블랙핑크
+            </h3>
+            <p class="project__text">
+              <span class="project__accenttext">작업시간</span>10일 소요
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">디자인 리뉴얼</span>Ai, Ps, Xd
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">프로그램</span>HTML5, CSS3,
+              jQuery
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">참여도</span>개인 작업 100%
+            </p>
+            <a
+              class="project__button"
+              href="https://tmddus00227.github.io/blackpink/"
+              title="리뉴얼사이트"
+              >Renewal Site
+            </a>
+          </div>
+        </div>
+        <div class="tab_content" id="krispydonut_content">
+          <img
+            class="project__img"
+            src="images/krispy_mu.png"
+            alt="크리스피크림도넛 웹사이트 목업 이미지"
+          />
+          <div class="project__description">
+            <h3 class="project__title">
+              <span class="project__subtitle">02 리디자인 PC 홈페이지 </span
+              ><br />크리스피크림도넛
+            </h3>
+            <p class="project__text">
+              <span class="project__accenttext">작업시간</span>3주 소요
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">디자인 리뉴얼</span>Ai, Ps, Xd
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">프로그램</span>HTML5, CSS3,
+              jQuery
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">참여도</span>개인 작업 100%
+            </p>
+            <a
+              class="project__button"
+              href="https://tmddus00227.github.io/krispy/"
+              title="리뉴얼사이트"
+              >Renewal Site
+            </a>
+          </div>
+        </div>
+        <div class="tab_content" id="sangol_content">
+          <img
+            class="project__img"
+            src="images/sangol_mu.png"
+            alt="산골초가펜션 웹사이트 목업 이미지"
+          />
+          <div class="project__description">
+            <h3 class="project__title">
+              <span class="project__subtitle">
+                03 리디자인 반응형 웹사이트 </span
+              ><br />산골초가펜션
+            </h3>
+            <p class="project__text">
+              <span class="project__accenttext">작업시간</span>3주 소요
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">디자인 리뉴얼</span>Ai, Ps, Xd
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">프로그램</span>HTML5, CSS3,
+              jQuery
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">참여도</span>개인 작업 100%
+            </p>
+            <a
+              class="project__button"
+              href="https://tmddus00227.github.io/sangolchoga/"
+              title="리뉴얼사이트"
+            >
+              Renewal Site
+            </a>
+          </div>
+        </div>
+        <div class="tab_content" id="healing_content">
+          <img
+            class="project__img"
+            src="images/healing_mu.png"
+            alt="힐링횡성 웹사이트 목업 이미지"
+          />
+          <div class="project__description">
+            <h3 class="project__title">
+              <span class="project__subtitle">04 디자인 모바일 홈페이지</span
+              ><br />힐링횡성
+            </h3>
+            <p class="project__text">
+              <span class="project__accenttext">작업시간</span>2주 소요
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">디자인 리뉴얼</span>Ai, Ps, Xd
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">프로그램</span>HTML5, CSS3,
+              jQuery
+            </p>
+            <p class="project__text">
+              <span class="project__accenttext">참여도</span>개인 작업 100%
+            </p>
+            <a
+              class="project__button"
+              href="https://tmddus00227.github.io/healing/"
+              title="디자인사이트"
+              >Design Site
+            </a>
+          </div>
         </div>
       </section>
       <!-- Design -->

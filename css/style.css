@@ -143,7 +143,7 @@ button:focus {
 
 .project__description {
   position: relative;
-  margin: 2rem 0 0 3rem;
+  margin: 5rem 0 0 3rem;
   text-align: left;
 }
 
@@ -410,43 +410,37 @@ button:focus {
 }
 
 /* Project */
-.project__navlist {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-  gap: 1rem;
-}
-
-.project__nav {
-  display: block;
+.tab_item {
+  display: inline-block;
   padding: 0.5rem 3rem;
   border: 1px solid var(--color-accent);
   border-radius: 4px;
   font-size: 1.1rem;
   white-space: nowrap;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.project__nav:hover {
-  background-color: var(--color-accent);
-  transition: 0.3s;
+input[name="tab_item"] {
+  display: none;
 }
 
-.project__nav.active {
-  background-color: var(--color-accent);
+.tab_content {
+  display: none;
+  clear: both;
+  overflow: hidden;
 }
 
-#sangol,
-#krispydonut,
-#blackpink,
-#healing {
+#blackpink:checked ~ #blackpink_content,
+#krispydonut:checked ~ #krispydonut_content,
+#sangol:checked ~ #sangol_content,
+#healing:checked ~ #healing_content {
   display: flex;
   justify-content: center;
 }
 
-#krispydonut,
-#blackpink,
-#healing {
-  display: none;
+#project input:checked + .tab_item {
+  background-color: var(--color-accent);
 }
 
 /* Design */
@@ -560,6 +554,13 @@ button:focus {
   color: var(--color-accent);
 }
 
+@media screen and (max-width: 890px) {
+  .tab_item {
+    display: block;
+    margin: 0.5rem 2.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .section {
     padding: 5rem 2rem;
@@ -637,17 +638,11 @@ button:focus {
     top: 27px;
   }
 
-  .project__navlist {
-    margin: 0;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  #sangol,
-  #krispydonut,
-  #blackpink,
-  #healing {
-    flex-direction: column;
+  #blackpink:checked ~ #blackpink_content,
+  #krispydonut:checked ~ #krispydonut_content,
+  #sangol:checked ~ #sangol_content,
+  #healing:checked ~ #healing_content {
+    display: block;
   }
 
   .project__img {
