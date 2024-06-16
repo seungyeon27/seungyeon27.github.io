@@ -12,6 +12,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="배포후 생성된 url" />
     <meta property="og:image" content="배포후에 생성된 이미지 url" />
+    <!-- Font -->
     <link
       rel="stylesheet"
       as="style"
@@ -22,13 +23,20 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/6166fad830.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Javasrcript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
+    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="src/projects.js"></script>
   </head>
@@ -71,6 +79,10 @@
             </div>
             <div class="home__arrow-down"></div>
           </a>
+          <a
+            href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/"
+            class="home_bg"
+          ></a>
         </div>
       </section>
       <!-- About -->
@@ -86,10 +98,14 @@
           alt="어바웃 영역 프로필 데코 이미지"
         />
         <ul class="about">
-          <li class="about__title">
+          <li
+            class="about__title"
+            aria-label="안녕하세요. 사람들에게 쉽게 원하는 정보를 드리는 웹 퍼블리셔 강승연입니다."
+          >
             안녕하세요 &#128075;<br />
-            <strong>사람들에게 쉽게 원하는 정보</strong>를 드리는 웹 퍼블리셔
-            강승연입니다.
+            <strong class="home__title--strong">사람들에게 원하는 정보</strong>
+            <br />
+            를 드리는 웹 퍼블리셔 강승연입니다.
           </li>
           <li class="about__description">
             광활한 인터넷 세상 속에서 많은 사람들이 쉽고 빠르게 원하는 정보를
