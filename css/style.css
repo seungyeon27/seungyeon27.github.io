@@ -324,6 +324,10 @@ button:focus {
   justify-content: space-evenly;
 }
 
+.about__h2 {
+  display: none;
+}
+
 .about__profile {
   clear: both;
   width: 400px;

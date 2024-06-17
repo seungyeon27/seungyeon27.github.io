@@ -20,8 +20,8 @@
     />
     <!-- Font -->
     <link
-      rel="stylesheet"
       as="style"
+      rel="preload"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
     />
@@ -39,9 +39,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javasrcript -->
-    <script type="module" src="src/main.js" defer></script>
-    <script type="module" src="src/active_menu.js" defer></script>
-    <script type="module" src="src/type.js" defer></script>
+    <script src="src/main.js" defer></script>
+    <script src="src/active_menu.js" defer></script>
+    <script src="src/type.js" defer></script>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="src/projects.js"></script>
@@ -93,6 +93,7 @@
       </section>
       <!-- About -->
       <section id="about">
+        <h2 class="about__h2">About</h2>
         <img
           class="about__profile"
           src="images/profile.jpg"
