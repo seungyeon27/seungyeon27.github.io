@@ -677,6 +677,10 @@ input[name="tab_item"] {
     display: block;
   }
 
+  .fa-bars {
+    color: var(--color-black);
+  }
+
   .header__menu {
     display: none;
     flex-direction: column;
@@ -691,6 +695,26 @@ input[name="tab_item"] {
 
   .header__nav {
     width: 100%;
+  }
+
+  .home__profile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .home__name {
+    margin-top: -50px;
+    color: var(--color-accent-varient);
+    font-family: var(--text-nanum);
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+
+  .home__titleleft,
+  .home__titleright {
+    margin-top: -205px;
   }
 
   #about {
