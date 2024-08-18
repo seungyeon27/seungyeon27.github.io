@@ -15,7 +15,7 @@ $(document).ready(function () {
   project_modal2.click(function (e) {
     e.preventDefault();
     let project_modal2 =
-      '<div class="project__modalwrap"><div class="project__modal"><img src="./images/sangolchogadetail.jpg" alt="산골초가펜션 웹사이트 상세페이지"></div><a href="#" title="닫기"><i class="fa-solid fa-xmark"></i></a></div>';
+      '<div class="project__modalwrap"><div class="project__modal"><img src="./images/krispydetail.jpg" alt="크리스피크림도넛 웹사이트 상세페이지"></div><a href="#" title="닫기"><i class="fa-solid fa-xmark"></i></a></div>';
     $("body").append(project_modal2);
     $(".project__modalwrap .fa-xmark").click(function () {
       $(".project__modalwrap").fadeOut();
@@ -26,7 +26,7 @@ $(document).ready(function () {
   project_modal3.click(function (e) {
     e.preventDefault();
     let project_modal3 =
-      '<div class="project__modalwrap"><div class="project__modal"><img src="./images/krispydetail.jpg" alt="크리스피크림도넛 웹사이트 상세페이지"></div><a href="#" title="닫기"><i class="fa-solid fa-xmark"></i></a></div>';
+      '<div class="project__modalwrap"><div class="project__modal"><img src="./images/sangolchogadetail.jpg" alt="산골초가펜션 웹사이트 상세페이지"></div><a href="#" title="닫기"><i class="fa-solid fa-xmark"></i></a></div>';
     $("body").append(project_modal3);
     $(".project__modalwrap .fa-xmark").click(function () {
       $(".project__modalwrap").fadeOut();
